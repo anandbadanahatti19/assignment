@@ -1,0 +1,42 @@
+.form-wrap{
+    box-sizing: border-box;
+    width: 300px;
+    margin: 40px;
+    form{
+        width: 100%;
+    }
+    label{
+        font-family: SourceSansPro-Regular;
+        font-size: 14px;
+        color: #1a1a1a;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        width: calc(100% - 16px);
+        display: block;
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid #1a1a1a;
+        padding: 0.5em;
+        margin-bottom: 24px;
+        font-family: SourceSansPro-Regular;
+        font-size: 14px;
+        color: #737373;
+    }
+    .btn{
+        width:100%;
+        text-align: center;
+        background-color: #0063e6;
+        color: #fff;
+        border: 1px solid #0063e6; 
+        height: 36px;
+        margin-top: 8px;
+        border-radius: 5px;
+        &:hover{
+            background-color:#f0f6ff;
+            color: #0063e6;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.card-container{
+    width: 290px;
+    min-height: 290px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    border-radius:1px;
+    &:hover{
+        box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.6);
+        cursor: pointer;
+    }
+    .image{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .content{
+        padding:20px 0 14px 16px;
+        .title{
+            font-family: SourceSansPro-SemiBold;
+            font-size: 15px;
+            color: #0f5ef0;
+            margin-bottom: 18px;
+        }
+        .sub-title{
+            font-family: SourceSansPro-Bold;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #7a8594;
+        }
+        .modified-by{
+            font-family: SourceSansPro-Regular;
+            font-size: 12px;
+            color: #7a8594;
+        }
+    }
+    
+}

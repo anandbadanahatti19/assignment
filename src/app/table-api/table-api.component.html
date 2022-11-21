@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th >Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of tableData | keyvalue">
+            <td>{{i.value['name']}}</td>
+            <td>{{i.value['price']}}</td>
+            <td>{{i.value['category']}}</td>
+        </tr>
+    </tbody>
+</table>
+
