@@ -8,8 +8,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
   getData(){
       this.http.get('https://raw.githubusercontent.com/epsilon-ux/code-challenge-resources/main/cookies.json').subscribe(response => {
-        console.log(response);
-       
+        
         return response;
       })
     }
