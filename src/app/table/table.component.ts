@@ -1,4 +1,4 @@
-import {LiveAnnouncer} from '@angular/cdk/a11y';
+// import {LiveAnnouncer} from '@angular/cdk/a11y';
 import { Component, ViewChild } from '@angular/core';
 import {MatSort, Sort} from '@angular/material/sort';
 import { HttpClient } from '@angular/common/http';
@@ -17,7 +17,7 @@ export class TableComponent  {
 
   displayedColumns: string[] = ['name', 'price', 'category'];
   // dataSource= new MatTableDataSource<any>();
-  constructor(private http : HttpClient,private _liveAnnouncer: LiveAnnouncer) { }
+  constructor(private http : HttpClient) { }
   
   @ViewChild(MatSort, { static: false }) sort!: MatSort;
 
@@ -36,10 +36,6 @@ export class TableComponent  {
   announceSortChange(sortState: Sort ) {
     console.log(sortState);
     
-    if (sortState.direction) {
-      this._liveAnnouncer.announce(`Sorted ${sortState.direction}ending`);
-    } else {
-      this._liveAnnouncer.announce('Sorting cleared');
-    }
+   
   }
 }
