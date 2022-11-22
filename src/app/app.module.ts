@@ -14,6 +14,7 @@ import { TableApiComponent } from './table-api/table-api.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { TableComponent } from './table/table.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,0 +1,42 @@
+
+:host {
+    ::ng-deep {
+        table{
+            border: 1px solid #ddd;
+            width: 100%;
+            thead{
+                tr{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    th{
+                        text-align: left;
+                        padding: 14px;
+                        font-family:  SourceSansPro-Bold;
+                        font-size: 14px;
+                }
+                }
+                
+            }
+            tbody{
+                tr{
+                    &:nth-child(odd){
+                        background-color: #f7f7f7;
+                    }
+                    &:hover{
+                        background-color: #f0f6ff;
+                        cursor: pointer;
+                    }
+                    td{
+                        text-align: left;
+                        padding: 14px;
+                        font-family:  SourceSansPro-Regular;
+                        font-size: 14px;
+                        
+                    }
+                }
+            }
+           
+        }
+      }
+  }
